@@ -1,0 +1,56 @@
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+//media queries
+@mixin desktop 
+  @media screen  and(max-width: #{$desktop}) 
+    @content
+
+@mixin tablet 
+  @media screen and(max-width: #{$tablet}) 
+    @content
+
+@mixin xlPhone 
+  @media screen and(max-width: #{$xlPhone}) 
+    @content
+
+@mixin xsPhone 
+  @media screen and(max-width: #{$xsPhone}) 
+    @content
+//border-radius
+@mixin br($br: 5px)
+   border-radius: $br
+//for links
+@mixin links($link,$visited,$hover,$active)
+   a 
+      color: $link
+      &:visited
+         color: $visited
+      &:hover
+         color: $hover
+      &:active
+         color: $active
+//for background
+@mixin pngBg($img)
+   background: url(../img/#{$img}.png) no-repeat center
+   background-size: cover
+@mixin jpgBg($img)
+   background: url(../img/#{$img}.jpg) no-repeat center
+   background-size: cover
+//по центру блок
+@mixin vcenter
+   position: absolute
+   top: 50%
+   left: 50%
+
+@mixin grad($pos,$col1,$col2)
+   background: linear-gradient($pos,$col1,$col2) 
+
+   
+   

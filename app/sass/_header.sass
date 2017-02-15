@@ -1,0 +1,66 @@
+.header
+  
+   padding: 20px 0
+   position: fixed
+   left: 0
+   right: 0
+   top: 0
+   border-bottom: 1px solid #fff
+   background: #fff
+   z-index: 20
+   &.show
+      background: #000
+      
+   &__menu
+      float: right
+      &_item
+         display: inline-block  
+         padding: 10px 0
+         margin: 0 10px
+      &_link  
+         cursor: pointer
+         position: relative
+         color: #000
+         text-transform: capitalize
+         padding: 10px 20px
+         font: 20px/20px ExoBold
+         font-weight: 500
+         &:after
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            height: 2px
+            width: 100%
+            background: #000
+            transition: all 0.5s
+            opacity: 0.5
+         &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 2px
+            height: 2px
+            background: #000
+            transition: height 0.5s
+            opacity: 0.5
+         &:hover::after
+            top: 100%
+            opacity: 1
+         &:hover::before
+            height: 100%
+            opacity: 1
+       
+        
+	               
+           
+        
+
+            
+         
+        
+        
+        
+      
+   

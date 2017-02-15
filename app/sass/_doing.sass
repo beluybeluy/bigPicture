@@ -1,0 +1,60 @@
+.doing
+   height: 100vh
+   padding: 350px 0
+   background: #000
+   position: relative
+   overflow-x: hidden 
+   text-align: center
+   +jpgBg(doing)
+   background-attachment: fixed   
+   vh: 100%
+   &__right
+      padding: 50px
+      position: absolute
+      top: 30%
+      left: 100%
+      width: 45%
+      min-height: 200px
+      background: #fff
+      text-align: left
+      transition: 2s ease
+      +br(10px 0 0 10px)
+      z-index: 0
+      box-sizing: border-box
+      &.show
+         left: 55%
+         transition: 2s ease
+   &__title
+      font: 50px/40px ExoBold
+      font-weight: 800
+      padding-bottom: 20px
+   &__descriptions
+      font: 20px/25px ExoMedium
+      font-weight: 300
+      padding-bottom: 20px
+   &__left
+      border-radius: 20px
+      background: rgba(255,255,255,0.2)
+      padding: 50px 0
+      box-sizing: border-box
+      position: absolute
+      left: 5%
+      width: 40%
+      min-height: 70vh
+      top: 50%
+      transform: translateY(-50%)
+   &__figure
+      &_img
+         max-width: 80%
+         height: auto
+      &_desc
+         font: 20px/20px ExoMedium
+         padding: 30px
+         color: #fff
+         max-width: 80%
+         margin: auto
+   
+      
+         
+   
+   

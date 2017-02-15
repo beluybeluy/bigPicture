@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bigEffect</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__menu">  
+            <li class="header__menu_item"><a class="header__menu_link" onclick="scrollItems('.intro')">Intro</a></li>
+            <li class="header__menu_item"><a class="header__menu_link" onclick="scrollItems('.doing')">What I do </a></li>
+            <li class="header__menu_item"><a class="header__menu_link" onclick="scrollItems('.about')">Who i am</a></li>
+            <li class="header__menu_item"><a class="header__menu_link" onclick="scrollItems('.works')">My work</a></li>
+            <li class="header__menu_item"><a class="header__menu_link" onclick="scrollItems('.contact')">Contact   </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="container">
+        <h1 class="intro__title">Hello everybody.</h1>
+        <h3 class="intro__undertitle">Welcome to Big Picture a responsive site template designed by HTML5 UP, built on Skel, and released for free under the Creative Commons Attribution license. </h3><a class="intro__icon_wrap" onclick="scrollItems('.doing')"><i class="intro__icon icon-arrow-down"></i></a>
+      </div>
+    </section>
+    <section class="doing"> <a class="arrow__down" onclick="scrollItems('.about')"><i class="intro__icon icon-arrow-down"></i></a>
+      <div class="doing__right">
+        <h1 class="doing__title">What I Do</h1>
+        <p class="doing__descriptions">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+      </div>
+      <div class="doing__left">
+        <figure class="doing__figure"><img class="doing__figure_img" src="img/mac.jpg">
+          <figcaption class="doing__figure_desc">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="about"><a class="arrow__down" onclick="scrollItems('.works')"><i class="intro__icon icon-arrow-down"></i></a>
+      <div class="about__left"> 
+        <h1 class="about__title">Who I Am</h1>
+        <p class="about__descriptions">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+      </div>
+      <div class="about__right">
+        <figure class="doing__figure"><img class="doing__figure_img" src="img/programmer.jpg">
+          <figcaption class="doing__figure_desc">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in.   </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="works">
+      <div class="works__title">My work</div>
+      <p class="works__descriptions">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+      <div class="works__left"> </div>
+      <div class="works__left works__left_second"></div>
+      <div class="works__left works__left_third"></div>
+      <div class="works__right"></div>
+      <div class="works__right works__right_second"></div>
+      <div class="works__right works__right_third"></div>
+    </section>
+    <section class="contact">
+      <h1 class="contact__title">Say Hello</h1>
+      <h3 class="contact__descriptions">Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</h3>
+      <div class="contact__wrap"> 
+        <form class="contact__form">
+          <input class="contact__form_input" placeholder="Name">
+          <input class="contact__form_input" placeholder="Email">
+          <textarea class="contact__form_area" placeholder="Message" rows="12" cols="45"></textarea><a class="contact__form_btn">Send Message</a>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <div class="footer__icons"><a class="footer__icons_link"><i class="icon-social-twitter"></i></a><a class="footer__icons_link"><i class="icon-social-facebook"></i></a><a class="footer__icons_link"><i class="icon-social-instagram"></i></a><a class="footer__icons_link"><i class="icon-social-pinterest"></i></a><a class="footer__icons_link"><i class="icon-social-linkedin"> </i></a><a class="footer__icons_link"><i class="icon-social-github">  </i></a></div>
+        <div class="footer__txt"> 
+          <h3 class="footer__txt_title">Developed by: Ruslan Biletskyi </h3>
+        </div>
+      </div>
+    </footer>
+    <script src="js/common.js"></script>
+  </body>
+</html>
